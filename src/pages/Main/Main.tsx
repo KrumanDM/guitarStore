@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Main.module.css";
-import mainPhoto from "../assets/images/mainPhoto.webp";
+import mainPhoto from "../../assets/images/mainPhoto.webp";
 
 const Main = () => {
   return (

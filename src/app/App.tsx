@@ -1,10 +1,10 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Footer from "./Footer/Footer";
-import Guitars from "./Guitars/Guitars";
-import { Header } from "./Header/Header";
-import Main from "./Main/Main";
-import Navigation from "./Navigation/Navigation";
+import Footer from "../pages/Footer/Footer";
+import Guitars from "../pages/Guitars/Guitars";
+import { Header } from "../shared/Header/Header";
+import Main from "../pages/Main/Main";
+import Navigation from "../shared/Navigation/Navigation";
 import { PATH } from "./routes/paths";
 
 const App = () => {
