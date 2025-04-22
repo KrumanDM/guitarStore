@@ -6,8 +6,8 @@ const Guitars = () => {
   return (
     <>
       <Header />
-      <div className={s.guitarsConatiner}>
-        <h1 className={s.mainTitle}>Guitars</h1>
+      <div className={s.guitars}>
+        <h1 className={s.guitars_mainTitle}>Guitars</h1>
       </div>
     </>
   );

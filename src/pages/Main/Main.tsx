@@ -4,9 +4,9 @@ import mainPhoto from "../../assets/images/mainPhoto.webp";
 
 const Main = () => {
   return (
-    <div className={s.mainConatiner}>
-      <img className={s.img} src={mainPhoto} alt={"store"} />
-      <h1 className={s.mainTitle}>Welcome to our guitar shop</h1>
+    <div className={s.main}>
+      <img className={s.main__img} src={mainPhoto} alt={"store"} />
+      <h1 className={s.main__title}>Welcome to our guitar shop</h1>
     </div>
   );
 };

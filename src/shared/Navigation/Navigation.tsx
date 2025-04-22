@@ -1,8 +1,9 @@
 import React from 'react';
+import s from './Navigation.module.css';
 
 const Navigation = () => {
     return (
-        <div className="navigation">
+        <div className={s.navigation}>
             <button>Главная</button>
             <button><a href="/assortment">Ассортимент</a></button>
             <button>Контакты</button>

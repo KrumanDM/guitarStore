@@ -1,144 +1,22 @@
-.headerContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: normal;
-  height: 72px;
-  width: 100%;
-  box-sizing: border-box;
-  border-bottom: 2px solid #f3f3f3;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.logoAndGuitars{
-  padding-left: 10px;
-  display: flex;
-  gap: 30px;
-}
-.storeContainer {
-  display: flex;
-  gap: 15px;
-  padding-left: 10px;
-  font-family: William Text Regular;
-  font-variant-numeric: lining-nums;
-  letter-spacing: 0.1em;
-}
-.storeContainer1 {
-  z-index: 1001;
-}
-
-
-.userContainer {
-  display: flex;
-  gap: 10px;
-  padding-right: 10px;
-  font-family: William Text Regular;
-  font-variant-numeric: lining-nums;
-  letter-spacing: 0.1em;
-}
-
-.logo {
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-
- 
-}
-.profile a {
-  color: var(--text-color);
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.busket a {
-  color: var(--text-color);
-}
-
-
-@media only screen and (max-width: 768px) {
-  .headerContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: normal;
-    height: 72px;
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: 2px solid #f3f3f3;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-
-
-/* From Uiverse.io by alexmaracinaru */ 
-.cta {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.cta span {
-  padding-bottom: 7px;
-  letter-spacing: 3px;
-  font-size: 14px;
-  
-  text-transform: uppercase;
-}
-
-
-
-.hoverUnderlineAnimation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px;
-}
-
-.hoverUnderlineAnimation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #a5a5a5;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.cta:hover .hoverUnderlineAnimation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
 .modal{
   position: absolute;
   bottom: 166px;
   background-color: white;
   width: 300px;
   height: 500px;
-  
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  border-radius: 5px;
+  border-color: #959DA5;
 }
-.buttonModalContainer{
+.modal__buttonContainer{
   display: flex;
   flex-direction: column;
   gap:6px;
   margin: 10px;
 }
-
-.buttonModal {
+.modal__button {
   appearance: none;
   background-color: #FAFBFC;
   border: 1px solid rgba(27, 31, 35, 0.15);
@@ -164,55 +42,141 @@
   word-wrap: break-word;
   width: 80%;
 }
-
-.buttonModal:hover {
+.modal__button:hover {
   background-color: #F3F4F6;
   text-decoration: none;
   transition-duration: 0.1s;
 }
-
-.buttonModal:disabled {
+.modal__button:disabled {
   background-color: #FAFBFC;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959DA5;
   cursor: default;
 }
-
-.buttonModal:active {
+.modal__button:active {
   background-color: #EDEFF2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
-
-.buttonModal:focus {
+.modal__button:focus {
   outline: 1px transparent;
 }
-
-.buttonModal:before {
+.modal__button:before {
   display: none;
 }
-
-.buttonModal:-webkit-details-marker {
+.modal__button:-webkit-details-marker {
   display: none;
 }
-
-.closeButton {
+.modal__closeButton {
   position: absolute;
-  top: 8px;
-  left: 260px;
-  
+  top: 10px;
+  left: 270px;
   border-radius: 5px;
   transition: background 0.5s;
 }
-
-
-.closeButton:hover {
+.modal__closeButton:hover {
   background-color: rgb(201, 201, 201);
 }
-
-.closeButton:active {
+.modal__closeButton:active {
   background-color: rgb(209, 61, 61);
 }
+
+
+.header__Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: normal;
+  height: 72px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #f3f3f3;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header__logoAndGuitars{
+  padding-left: 10px;
+  display: flex;
+  gap: 30px;
+}
+.header__logo {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+.header__storeContainer {
+  display: flex;
+  gap: 15px;
+  padding-left: 10px;
+  font-family: William Text Regular;
+  font-variant-numeric: lining-nums;
+  letter-spacing: 0.1em;
+}
+.header__cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.header__cta span {
+  padding-bottom: 7px;
+  letter-spacing: 3px;
+  font-size: 14px; 
+  text-transform: uppercase;
+}
+.header__hoverUnderlineAnimation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+.header__hoverUnderlineAnimation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a5a5a5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.header__cta:hover .header__hoverUnderlineAnimation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header__userContainer {
+  display: flex;
+  gap: 10px;
+  padding-right: 10px;
+  font-family: William Text Regular;
+  font-variant-numeric: lining-nums;
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: normal;
+    height: 72px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #f3f3f3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
 
 
 
