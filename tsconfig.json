@@ -3,7 +3,7 @@
     "moduleResolution": "node",
     "target": "es2016",
     "module": "commonjs",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "typeRoots": ["node_modules/@types"],
     "types": ["react"],
     "esModuleInterop": true,
@@ -11,6 +11,11 @@
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": "src",
+
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
     "paths": {
       "app/*":["app/*"],
       "assets/*":["assets/*"],

@@ -1,5 +1,6 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button/Button";
 import s from "./Header.module.css";
 
 export const Header = () => {
@@ -48,7 +49,7 @@ export const Header = () => {
               <span className={s.header__hoverUnderlineAnimation}> Guitars </span>
             </button>
 
-            <button>drums</button>
+            <Button>drums</Button>
             <button>acoustic</button>
           </div>
         </div>
