@@ -1,7 +1,11 @@
+import { Drawer, IconButton } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button/Button";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 import s from "./Header.module.css";
+
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +14,40 @@ export const Header = () => {
     setIsOpen(!isOpen);
   };
 
+
+
+  const [isOpenSidebar, setIsOpenSidebar] = useState(false);
+const handleDrawerToggle = () => {
+  setIsOpenSidebar(!isOpenSidebar);
+};
+
+
   return (
     <div className={s.header}>
+
+<Drawer
+    anchor="left"
+    open={isOpenSidebar}
+    onClose={handleDrawerToggle}
+  >
+    <div className={s.sidebar}>
+      <ul>
+        <li>
+          <Link to="/guitars">Guitars</Link>
+        </li>
+        <li>
+          <Link to="/drums">Drums</Link>
+        </li>
+        <li>
+          <Link to="/acoustic">Acoustic</Link>
+        </li>
+      </ul>
+      <IconButton className={s.close__button} edge="start" color="inherit" aria-label="close" onClick={handleDrawerToggle}>
+        <CloseIcon />
+      </IconButton>
+    </div>
+  </Drawer>
+
       {isOpen && (
         <div className={s.modal}>
           <div className={s.modal__buttonContainer}>
@@ -45,11 +81,16 @@ export const Header = () => {
             guitarStore
           </a>
           <div className={s.header__storeContainer}>
+      
+          
+      <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerToggle}>
+        <MenuIcon />
+      </IconButton>
+
             <button className={s.header__cta} onClick={openModalHandler}>
               <span className={s.header__hoverUnderlineAnimation}> Guitars </span>
             </button>
-
-            <Button>drums</Button>
+            <button>drums</button>
             <button>acoustic</button>
           </div>
         </div>

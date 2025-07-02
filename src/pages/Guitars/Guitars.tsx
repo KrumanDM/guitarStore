@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "shared/components/Header/Header";
+import { Header } from "shared/components/Header/Header/Header";
 import s from "./Guitars.module.css";
 
 const Guitars = () => {

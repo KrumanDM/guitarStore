@@ -1,11 +1,11 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "pages/Footer/Footer";
-import { Header } from "shared/components/Header/Header";
 import { PATH } from "./routes/paths";
 import Main from "pages/Main/Main";
 import Navigation from "shared/Navigation/Navigation";
 import Guitars from "pages/Guitars/Guitars";
+import { Header } from "shared/components/Header/Header/Header";
 
 
 const App = () => {
