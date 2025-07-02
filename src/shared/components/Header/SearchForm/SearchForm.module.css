@@ -1,0 +1,43 @@
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 8px 40px 8px 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  .clearButton,
+  .searchButton {
+    position: absolute;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clearButton {
+    right: 36px;
+  }
+  
+  
+  .closeButton {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .closeButton:hover {
+    transform: rotate(90deg);
+  }
+  
