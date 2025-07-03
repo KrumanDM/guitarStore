@@ -6,6 +6,8 @@ import Main from "pages/Main/Main";
 import Navigation from "shared/Navigation/Navigation";
 import Guitars from "pages/Guitars/Guitars";
 import { Header } from "shared/components/Header/Header/Header";
+import Profile from "pages/Profile/Profile";
+import Busket from "pages/Busket/Busket";
 
 
 const App = () => {
@@ -24,6 +26,8 @@ const App = () => {
           }
         />
         <Route path={PATH.GUITARS} element={<Guitars />} />
+        <Route path={PATH.PROFILE} element={<Profile />} />
+        <Route path={PATH.BUSKET} element={<Busket />} />
       </Routes>
     </HashRouter>
   );

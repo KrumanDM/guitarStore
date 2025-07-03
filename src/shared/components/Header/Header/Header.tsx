@@ -30,7 +30,7 @@ const handleSearch = (query: string) => {
   return (
     <div className={s.header}>
       <Drawer anchor="left" open={isOpenSidebar} onClose={handleDrawerToggle}>
-        <div className={s.sidebar}>
+        <div className={s.header__sidebar}>
           <ul>
             <li>
               <Link to="/guitars">Guitars</Link>
@@ -78,13 +78,13 @@ const handleSearch = (query: string) => {
 
         <div className={s.header__userContainer}>
           <div className={s.header__profile}>
-            <PermIdentityOutlinedIcon/>
+            <Link to="/profile"><PermIdentityOutlinedIcon sx={{ fontSize: 30 }}/></Link>
           </div>
           <div className={s.header__favorite}>
-            <FavoriteBorderOutlinedIcon/>
+            <FavoriteBorderOutlinedIcon sx={{ fontSize: 28 }}/>
           </div>
           <div className={s.header__busket}>
-            <LocalMallOutlinedIcon/>
+            <Link to="/busket"><LocalMallOutlinedIcon sx={{ fontSize: 28 }}/></Link>
           </div>
         </div>
       </div>

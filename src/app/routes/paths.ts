@@ -1,4 +1,6 @@
 export const PATH = {
     BASE: '/',
-    GUITARS: "/guitars",  
+    GUITARS: "/guitars",
+    PROFILE: "/profile",
+    BUSKET: "/busket",  
   };
