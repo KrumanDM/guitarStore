@@ -8,7 +8,7 @@ import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 
 import s from "./Header.module.css";
 import SearchForm from "../SearchForm/SearchForm";
-import { Navigation } from "shared/Navigation/Navigation"; // или скорректируй путь, если файл в другом месте
+import { Navigation } from "shared/Navigation/Navigation";
 
 export const Header = () => {
   const navigate = useNavigate();

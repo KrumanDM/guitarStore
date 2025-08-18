@@ -5,7 +5,6 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '*.module.css': './global.d.ts',
       app: '/src/app',
       assets: '/src/assets',
       pages: '/src/pages',
