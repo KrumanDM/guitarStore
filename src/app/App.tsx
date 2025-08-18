@@ -3,7 +3,6 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "pages/Footer/Footer";
 import { PATH } from "./routes/paths";
 import Main from "pages/Main/Main";
-import Navigation from "shared/Navigation/Navigation";
 import Guitars from "pages/Guitars/Guitars";
 import { Header } from "shared/components/Header/Header/Header";
 import Profile from "pages/Profile/Profile";
@@ -20,7 +19,6 @@ const App = () => {
             <div>
               <Header />
               <Main />
-              <Navigation />
               <Footer />
             </div>
           }
