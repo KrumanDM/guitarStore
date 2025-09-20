@@ -54,3 +54,11 @@
   .footer__bottom p {
     margin: 0;
   }
+
+  @media (min-width: 1440px) {
+    .footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px;
+    }
+}

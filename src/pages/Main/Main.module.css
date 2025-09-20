@@ -9,5 +9,11 @@
     font-weight: 100;
 }
 .main__img{
-    
+    width: 100%;
+}
+@media (min-width: 1440px) {
+    .main{
+    max-width: 1440px;
+    margin: 0 auto;
+    }
 }

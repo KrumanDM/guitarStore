@@ -20,7 +20,7 @@ export const Navigation: React.FC<NavigationProps> = ({
   triggerClassName,
   sidebarClassName,
   closeButtonClassName,
-  triggerLabel = "Категории",
+  triggerLabel = "",
 }) => {
   const [open, setOpen] = useState(false);
 
