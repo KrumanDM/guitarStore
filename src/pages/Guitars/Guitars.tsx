@@ -16,32 +16,30 @@ const Guitars = () => {
         </h1>
 
         <ul
-  role="list"
-  aria-labelledby="guitars-title"
-  className={s.guitars_list}
->
-  {guitars.map((guitar) => (
-    <li key={guitar.id} role="listitem" className={s.guitars_item}>
-    <img
-      src={guitar.image}
-      alt={`${guitar.title} — ${guitar.brand}`}
-      className={s.guitar_image}
-    />
-    <div className={s.guitar_header}>
-      <img
-        src={guitar.logo}
-        alt={`${guitar.brand} logo`}
-        className={s.guitar_logo}
-      />
-      <span className={s.guitar_title}>{guitar.title}</span>
-    </div>
-    <span className={s.guitar_brand}>{guitar.brand}</span> —{" "}
-    <span className={s.guitar_price}>${guitar.price}</span>
-  </li>
-  
-  ))}
-</ul>
-
+          role="list"
+          aria-labelledby="guitars-title"
+          className={s.guitars_list}
+        >
+          {guitars.map((guitar) => (
+            <li key={guitar.id} role="listitem" className={s.guitars_item}>
+              <img
+                src={guitar.image}
+                alt={`${guitar.title} — ${guitar.brand}`}
+                className={s.guitar_image}
+              />
+              <div className={s.guitar_header}>
+                <img
+                  src={guitar.logo}
+                  alt={`${guitar.brand} logo`}
+                  className={s.guitar_logo}
+                />
+                <span className={s.guitar_title}>{guitar.title}</span>
+              </div>
+              <span className={s.guitar_brand}>{guitar.brand}</span> —{" "}
+              <span className={s.guitar_price}>${guitar.price}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
