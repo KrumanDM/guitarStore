@@ -42,13 +42,13 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className={`${sidebarClassName} ${s.sidebar}`}>
           <ul className={s.navList}>
             <li>
-              <Link to="/guitars" onClick={closeDrawer}>Guitars</Link>
+              <Link to="/category/guitars" onClick={closeDrawer}>Guitars</Link>
             </li>
             <li>
-              <Link to="/drums" onClick={closeDrawer}>Drums</Link>
+              <Link to="/category/drums" onClick={closeDrawer}>Drums</Link>
             </li>
             <li>
-              <Link to="/acoustic" onClick={closeDrawer}>Acoustic</Link>
+              <Link to="/category/acoustic" onClick={closeDrawer}>Acoustic</Link>
             </li>
           </ul>
 

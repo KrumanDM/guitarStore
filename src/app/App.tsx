@@ -3,10 +3,10 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "pages/Footer/Footer";
 import { PATH } from "./routes/paths";
 import Main from "pages/Main/Main";
-import Guitars from "pages/Guitars/Guitars";
 import { Header } from "shared/components/Header/Header/Header";
 import Profile from "pages/Profile/Profile";
 import Busket from "pages/Busket/Busket";
+import MarketPage from "shared/components/MarketPage/MarketPage";
 
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
             </div>
           }
         />
-        <Route path={PATH.GUITARS} element={<Guitars />} />
+        <Route path="category/:categoryName" element={<MarketPage />} />
         <Route path={PATH.PROFILE} element={<Profile />} />
         <Route path={PATH.BUSKET} element={<Busket />} />
       </Routes>

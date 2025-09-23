@@ -1,12 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import guitarsReducer from '../pages/Guitars/guitarsSlice';
+import marketReducer from '../shared/components/MarketPage/marketSlice';
 
 export const store = configureStore({
   reducer: {
-    guitars: guitarsReducer,
-  },
+    market: marketReducer
+  }
 });
 
-// Типы для useSelector и useDispatch
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
